@@ -55,8 +55,8 @@ body:
   - type: input
     id: data-type-other
     attributes:
-      label: (If ) Specify other
-      description: If you selected other from the dropdown menu, please specify the spatial data type.
+      label: If Other, specify data type
+      description: If you selected Other from the dropdown menu above, please specify the spatial data type.
       placeholder: ex. Geodatabase (*.gdb)
     validations:
       required: false
@@ -67,4 +67,5 @@ body:
       description: If yes, and upon acceptance, a pull request will need to be initiated containing the R code. You will be instructed when to do this.
       options:
         - label: "Yes"
+        - label: "No"
           required: true
