@@ -21,7 +21,11 @@ body:
     attributes:
       label: What data would you like to add?
       description: Please provide a clear and concise description of what the data are.
-      value: "All data require source documentation. Without this, data can not be accepted."
+      value: "All data require source documentation. Without this, data can not be accepted." |
+        1.
+        2.
+        3.
+        ...
     validations:
       required: true
   - type: checkboxes
@@ -41,6 +45,7 @@ body:
     validations:
       required: false
   - type: dropdown
+    id: data-type
     attributes:
       label: What is the type of data?
       description: Spatial data type for the requested addition.
@@ -51,3 +56,11 @@ body:
         - label: Other (please specify below)
     validations:
       required: true      
+  - type: input
+    id: data-type-other
+    attributes:
+      description: If you selected other, please specify spatial data type.
+      placeholder: ex. Geodatabase (*.gdb)
+    validations:
+      required: false
+      
