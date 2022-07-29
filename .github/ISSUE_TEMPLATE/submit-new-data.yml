@@ -21,8 +21,7 @@ body:
     attributes:
       label: What data would you like to add?
       description: Please provide a clear and concise description of what the data are.
-      value: All data require source documentation. Without this, data can not be accepted.
-        |
+      value: "All data require source documentation. Without this, data can not be accepted."
         1.
         2.
         3.
