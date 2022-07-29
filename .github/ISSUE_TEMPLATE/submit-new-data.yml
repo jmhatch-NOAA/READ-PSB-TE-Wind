@@ -2,10 +2,7 @@ name: New Data Submission Request
 description: Request new data be added to NEFSCspatial
 title: "[Request]: "
 labels: ["enhancement"]
-assignees:
-  - andybeet
-  - jmhatch
-  - kimberly-bastille
+assignees: [andybeet,jmhatch,kimberly-bastille]
 body:
   - type: markdown
     attributes:
@@ -31,7 +28,7 @@ body:
     id: browsers
     attributes:
       label: What is the type of data?
-      multiple: true
+      multiple: false
       options:
         - Shapefile
         - Geodatabase
