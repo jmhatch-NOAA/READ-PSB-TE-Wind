@@ -1,5 +1,5 @@
 name: New Data Submission Request
-description: Request new data be added to NEFSCspatial
+description: Request new data be added to NEFSCspatial (test form instead of template)
 title: "[Request]: "
 labels: ["enhancement"]
 assignees: ["andybeet","jmhatch","kimberly-bastille"]
@@ -55,7 +55,7 @@ body:
   - type: input
     id: data-type-other
     attributes:
-      label: If Other, specify data type
+      label: If Other, please specify data type
       description: If you selected Other from the dropdown menu above, please specify the spatial data type.
       placeholder: ex. Geodatabase (*.gdb)
     validations:
