@@ -1,0 +1,39 @@
+name: :earth_americas: New Data Submission Request
+description: Request new data be added to NEFSCspatial
+title: "[Request]: "
+labels: ["enhancement"]
+assignees:
+  - andybeet
+  - jmhatch
+  - kimberly-bastille
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this submission request!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@noaa.gov
+    validations:
+      required: false
+  - type: textarea
+    id: what-data
+    attributes:
+      label: What data would you like to add?
+      description: Please provide a clear and concise description of what the data are.
+      value: "Please add the following spatial data..."
+    validations:
+      required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: What is the type of data?
+      multiple: true
+      options:
+        - Shapefile
+        - Geodatabase
+        - Raster
+        - Other (please specfiy above)
