@@ -47,16 +47,24 @@ body:
       description: Spatial data type for the requested addition.
       multiple: false
       options:
-        - label: Shapefile
-        - label: Raster
-        - label: Other (please specify below)
+        - label: "Shapefile"
+        - label: "Raster"
+        - label: "Other (please specify below)"
     validations:
       required: true      
   - type: input
     id: data-type-other
     attributes:
-      label: Specify other
-      description: If you selected other above, please specify spatial data type.
+      label: (If ) Specify other
+      description: If you selected other from the dropdown menu, please specify the spatial data type.
       placeholder: ex. Geodatabase (*.gdb)
     validations:
       required: false
+  - type: checkboxes
+    id: data-manip
+    attributes:
+      label: Does this data require any additional manipulation before usage?
+      description: If yes, and upon acceptance, a pull request will need to be initiated containing the R code. You will be instructed when to do this.
+      options:
+        - label: "Yes"
+          required: true
