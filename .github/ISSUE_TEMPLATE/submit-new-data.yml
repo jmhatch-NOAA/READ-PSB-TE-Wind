@@ -47,9 +47,9 @@ body:
       description: Spatial data type for the requested addition.
       multiple: false
       options:
-        - label: "Shapefile"
-        - label: "Raster"
-        - label: "Other (please specify below)"
+        - Shapefile
+        - Raster
+        - Other (please specify below)
     validations:
       required: true      
   - type: input
@@ -67,7 +67,7 @@ body:
       description: If yes, and upon acceptance, a pull request will need to be initiated containing the R code. You will be instructed when to do this.
       multiple: false
       options:
-        - label: "Yes"
-        - label: "No"
+        - Yes
+        - No
     validations:
       required: true 
