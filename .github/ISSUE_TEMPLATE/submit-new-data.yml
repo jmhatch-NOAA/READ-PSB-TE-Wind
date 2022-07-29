@@ -55,7 +55,8 @@ body:
   - type: input
     id: data-type-other
     attributes:
-      description: If you selected other, please specify spatial data type.
+      label: Specify other
+      description: If you selected other above, please specify spatial data type.
       placeholder: ex. Geodatabase (*.gdb)
     validations:
       required: false
