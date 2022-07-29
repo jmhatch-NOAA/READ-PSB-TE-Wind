@@ -21,7 +21,7 @@ body:
     attributes:
       label: What data would you like to add?
       description: Please provide a clear and concise description of what the data are.
-      value: "Please add the following spatial data..."
+      value: "All data require source documentation. Without this, data can not be accepted."
     validations:
       required: true
   - type: checkboxes
@@ -32,3 +32,22 @@ body:
       options:
         - label: I have searched the existing data.
           required: true
+  - type: input
+    id: data-url
+    attributes:
+      label: Can you provide a URL to view the data online?
+      description: Please provide a link to the data, whether http, ftp, or other.
+      placeholder: ex. https://www.fisheries.noaa.gov/inport/stats/NEFSC/data-sets
+    validations:
+      required: false
+  - type: dropdown
+    attributes:
+      label: What is the type of data?
+      description: Spatial data type for the requested addition.
+      multiple: false
+      options:
+        - label: Shapefile
+        - label: Raster
+        - label: Other (please specify below)
+    validations:
+      required: true      
