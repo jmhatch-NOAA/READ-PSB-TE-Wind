@@ -28,7 +28,7 @@ body:
     id: search-data
     attributes:
       label: Are there data currently in the package that are similar?
-      description: Please search to see if data already exists for your needs.
-    options:
-    - label: I have searched the existing data
-      required: true
+      description: Please search to see if data already exists for your purposes.
+      options:
+        - label: I have searched the existing data.
+          required:true
