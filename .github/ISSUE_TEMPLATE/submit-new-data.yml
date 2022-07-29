@@ -31,4 +31,4 @@ body:
       description: Please search to see if data already exists for your purposes.
       options:
         - label: I have searched the existing data.
-          required:true
+          required: true
