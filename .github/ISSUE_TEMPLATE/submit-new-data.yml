@@ -60,7 +60,7 @@ body:
       placeholder: ex. Geodatabase (*.gdb)
     validations:
       required: false
-  - type: checkboxes
+  - type: dropdown
     id: data-manip
     attributes:
       label: Does this data require any additional manipulation before usage?
@@ -70,4 +70,4 @@ body:
         - label: "Yes"
         - label: "No"
     validations:
-      required: true
+      required: true 
