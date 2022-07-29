@@ -59,4 +59,3 @@ body:
       placeholder: ex. Geodatabase (*.gdb)
     validations:
       required: false
-      
