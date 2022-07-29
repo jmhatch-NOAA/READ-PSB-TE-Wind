@@ -67,7 +67,7 @@ body:
       description: If yes, and upon acceptance, a pull request will need to be initiated containing the R code. You will be instructed when to do this.
       multiple: false
       options:
-        - Yes
-        - No
+        - 'Yes'
+        - 'No'
     validations:
       required: true 
