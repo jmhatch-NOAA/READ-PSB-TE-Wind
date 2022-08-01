@@ -3,7 +3,7 @@ on:
   push:
 
 jobs:
-  BOEM-WEAs-update:
+  update-BOEM-WEAs:
     runs-on: ubuntu-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
@@ -15,7 +15,13 @@ jobs:
         uses: r-lib/actions/setup-r@master
         with:
           r-version: '4.2.0'
-
+          
+      - name: Install R package linux dependencies
+        run: |        
+          sudo apt update
+          sudo apt-get install libcurl4-openssl-dev libudunits2-dev libharfbuzz-dev libfribidi-dev
+                  shell: bash
+        
       - name: Install R packages
         run: |
           install.packages(c("dplyr", "magrittr", "httr", "here", "sf", "stringr", "usethis", "rvest", "devtools"))
