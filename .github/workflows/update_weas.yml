@@ -20,7 +20,7 @@ jobs:
         run: |        
           sudo apt update
           sudo apt-get install libcurl4-openssl-dev libudunits2-dev libharfbuzz-dev libfribidi-dev
-                  shell: bash
+        shell: bash
         
       - name: Install R packages
         run: |
