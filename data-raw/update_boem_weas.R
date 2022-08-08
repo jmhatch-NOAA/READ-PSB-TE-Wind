@@ -4,12 +4,12 @@
 #' 
 weas_updated = function() {
   
-  # query ArcGIS REST service to get latest edited dates
+  # query ArcGIS REST service to get latest edits
   url = 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/ArcGIS/rest/services/BOEM_Wind_Planning_and_Lease_Areas/FeatureServer'
   active_layer_info <- jsonlite::fromJSON(httr::content(httr::POST(paste0(url, '/0'), query = list(f = "json"), encode = "form", config = httr::config(ssl_verifypeer = FALSE)), as = "text"))
   planning_layer_info <- jsonlite::fromJSON(httr::content(httr::POST(paste0(url, '/2'), query = list(f = "json"), encode = "form", config = httr::config(ssl_verifypeer = FALSE)), as = "text"))
   
-  # load data to get latest downloaded dates
+  # load data to get latest downloads
   load(file = here::here('data', 'boem_wea_outlines.rda'))
   
   # extract dates
