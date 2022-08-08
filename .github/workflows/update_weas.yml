@@ -1,9 +1,13 @@
 name: update-BOEM-WEAs
+
 on:
-  push:
+  workflow_run:
+    workflows: ["Check-BOEM-WEAS"]
+    types:
+      - completed
 
 jobs:
-  update-BOEM-WEAs:
+  update:
     runs-on: ubuntu-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
