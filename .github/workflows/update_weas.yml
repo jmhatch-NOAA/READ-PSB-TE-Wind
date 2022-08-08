@@ -19,7 +19,7 @@ jobs:
         
       - name: Install R packages
         run: |
-          install.packages(c("dplyr", "magrittr", "httr", "here", "sf", "raster", "stringr", "usethis", "rvest", "devtools"))
+          install.packages(c("dplyr", "magrittr", "httr", "here", "sf", "raster", "stringr", "usethis", "devtools"))
         shell: Rscript {0}
 
       - name: If needed, update BOEM WEAs
