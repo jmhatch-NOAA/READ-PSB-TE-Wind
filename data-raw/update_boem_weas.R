@@ -22,7 +22,10 @@ weas_updated = function() {
   if ((active_update > active_recent) | (planning_update > planning_recent)) {
     
     # do nothing, this will result in a GH action success
-
+    ct <- v8::v8()
+    ct$eval("const core = require('@actions/core');")
+    ct$eval("core.setFailed(`Action failed.`);")
+    
   } else {
     
     # run javascript to set a failure and stop conditional GH action
