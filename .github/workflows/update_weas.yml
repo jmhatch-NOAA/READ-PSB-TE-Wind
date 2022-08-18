@@ -2,7 +2,7 @@ name: update-BOEM-WEAs
 
 on:
   workflow_run:
-    workflows: [Check-BOEM-WEAS]
+    workflows: [check-BOEM-WEAS]
     types: [completed]
 
 jobs:
