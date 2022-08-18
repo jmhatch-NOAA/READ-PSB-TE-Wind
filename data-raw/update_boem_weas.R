@@ -25,6 +25,7 @@ weas_updated = function() {
     ct <- V8::v8()
     ct$eval("const core = require('@actions/core');")
     ct$eval("core.setFailed(`Action failed.`);")
+    cat('Entered if')
     
   } else {
     
@@ -32,6 +33,7 @@ weas_updated = function() {
     ct <- V8::v8()
     ct$eval("const core = require('@actions/core');")
     ct$eval("core.setFailed(`Action failed.`);")
+    cat('Entered else')
     
   }
   
