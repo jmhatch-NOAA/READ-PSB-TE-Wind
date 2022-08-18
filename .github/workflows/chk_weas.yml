@@ -1,4 +1,4 @@
-name: Check-BOEM-WEAS
+name: check-BOEM-WEAS
 
 on: [push]
 
@@ -19,7 +19,7 @@ jobs:
         
       - name: Install R packages
         run: |
-          install.packages(c("httr", "here", "lubridate"))
+          install.packages(c("httr", "here", "lubridate", "V8"))
         shell: Rscript {0}      
         
       - name: Check if BOEM WEAs were updated recently
