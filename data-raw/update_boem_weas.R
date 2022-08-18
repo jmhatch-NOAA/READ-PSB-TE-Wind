@@ -20,9 +20,9 @@ weas_updated = function() {
   
   # was the geodatabase updated?
   if ((active_update > active_recent) | (planning_update > planning_recent)) {
-    return(TRUE)
+    return(0)
   } else {
-    return(FALSE)
+    return(1) ## set failure exit code to stop conditional GH action
   }
   
 }
