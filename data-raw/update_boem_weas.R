@@ -1,6 +1,6 @@
 #' Was the data updated for renewable energy lease areas and wind planning areas from BOEM?
 #' 
-#' @return TRUE if updated, otherwise FALSE.
+#' @return NULL
 #' 
 weas_updated = function() {
   
@@ -22,8 +22,7 @@ weas_updated = function() {
   if ((active_update > active_recent) | (planning_update > planning_recent)) {
     
     # do nothing, this will result in a GH action success
-    stop('BOEM WEAs NOT Updated.')
-    
+
   } else {
     
     # set a failure and stop conditional GH action (everything is up to date)
