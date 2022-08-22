@@ -22,12 +22,15 @@ weas_updated = function() {
   if ((active_update > active_recent) | (planning_update > planning_recent)) {
     
     # do nothing, this will result in a GH action success
-    
+
   } else {
     
-    # set a failure and stop conditional GH action
+    # set a failure and stop conditional GH action (everything is up to date)
     stop('BOEM WEAs NOT Updated.')
     
   }
   
 }
+
+# call function
+weas_updated()
