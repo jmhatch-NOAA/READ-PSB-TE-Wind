@@ -5,7 +5,7 @@
 weas_updated = function() {
   
   # query ArcGIS REST service to get latest edits
-  url = 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/ArcGIS/rest/services/BOEM_Wind_Planning_and_Lease_Areas/FeatureServer'
+  url <- 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/ArcGIS/rest/services/BOEM_Wind_Planning_and_Lease_Areas/FeatureServer'
   active_layer_info <- jsonlite::fromJSON(httr::content(httr::POST(paste0(url, '/0'), query = list(f = "json"), encode = "form", config = httr::config(ssl_verifypeer = FALSE)), as = "text"))
   planning_layer_info <- jsonlite::fromJSON(httr::content(httr::POST(paste0(url, '/2'), query = list(f = "json"), encode = "form", config = httr::config(ssl_verifypeer = FALSE)), as = "text"))
   
@@ -22,7 +22,8 @@ weas_updated = function() {
   if ((active_update > active_recent) | (planning_update > planning_recent)) {
     
     # do nothing, this will result in a GH action success
-
+    stop('BOEM WEAs NOT Updated.')
+    
   } else {
     
     # set a failure and stop conditional GH action (everything is up to date)
@@ -32,5 +33,5 @@ weas_updated = function() {
   
 }
 
-# call function
+# were BOEM WEAs updated?
 weas_updated()
