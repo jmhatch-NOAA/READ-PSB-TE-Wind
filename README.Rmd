@@ -66,7 +66,10 @@ wind_tib = tibble(file_name = keep_files) %>%
   arrange(month) 
 
 ## load tagged relative density rasters in order specified by wind_tib
-file_img = purrr::map(.x = wind_tib$file_name, .f = function(.x) here::here('data', 'cc_tagged_density_data', .x) %>% raster(.) %>% projectRaster(., crs = st_crs(4326)$proj4string))
+file_img = purrr::map(.x = wind_tib$file_name, .f = function(.x) {
+  ras = raster(here::here('data', 'cc_tagged_density_data', .x))
+  raster::crs(ras) = '+proj=omerc +lat_0=35 +lonc=-75 +alpha=40 +gamma=40 +k=0.9996 +x_0=0 +y_0=0 +datum=NAD83 +units=m +no_defs'
+  projectRaster(ras, crs = st_crs(4326)$proj4string) })
 
 ## format BOEM wind energy areas data
 boem_wind = boem_wea_outlines %>% 
