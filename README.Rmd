@@ -27,10 +27,9 @@ This GitHub repository is a place and space for discussion and collaboration amo
 <img align="right" src="imgs/mind_map_te_wind.png" width="450">
 
 Exploring the relationship between individual and population risk (is this the right term?), as it relates to sea turtles and offshore wind development:
-
-- Scale matters
-- Research tools differ depending on scale
-- What should we focus on?
+* Scale matters
+* Research tools differ depending on scale
+* What should we focus on?
 
 ```{r readme, echo = FALSE, eval = TRUE, results = 'hide', message = FALSE, warning = FALSE, comment = NA}
 ## load libraries
