@@ -21,7 +21,7 @@ jobs:
         shell: bash
 
       - name: Install R packages
-        run: Rscript -e 'install.packages(c("cowplot", "devtools", "dplyr", "ggplot2", "here", "htmlwidgets", "leaflet", "lwgeom", "magrittr", "MetBrewer", "raster", "rmarkdown", "sf"))'
+        run: Rscript -e 'install.packages(c("cowplot", "devtools", "dplyr", "ggplot2", "here", "htmlwidgets", "leaflet", "lwgeom", "magrittr", "MetBrewer", "ncdf4", "raster", "rmarkdown", "sf"))'
         
       - name: Update README
         run: |
