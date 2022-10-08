@@ -20,10 +20,13 @@ collaboration among members of the NEFSC / PETT / TE program focused on
 
 Exploring the relationship between individual and population risk (is
 this the right term?), as it relates to sea turtles and offshore wind
-development: \* Scale matters \* Research tools differ depending on
-scale \* What should we focus on?
+development:
 
-### [:earth_americas:](https://jmhatch-noaa.github.io/READ-PSB-TE-Wind/) Spatial considerations
+-   Scale matters
+    -   Research tools differ depending on scale
+-   What should we focus on?
+
+### [:earth\_americas:](https://jmhatch-noaa.github.io/READ-PSB-TE-Wind/) Spatial considerations
 
 Looking at the active renewable energy leases from BOEM, we see that
 offshore wind development will make up roughly 1.9% of the Greater

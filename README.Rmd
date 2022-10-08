@@ -101,7 +101,7 @@ cc_pres_plt = ggplot(data = prob_df, aes(x = month, y = prob)) +
   scale_x_continuous(breaks = 1:12, labels = substr(month.name, 1, 1)) + 
   theme_cowplot() + 
   labs(y = 'probability')
-ggsave(filename = here('imgs', 'cc_presence_weas.png'), device = 'png', bg = 'white', plot = cc_pres_plt, width = 7, height = 6.5, units = 'in')
+ggsave(filename = here('imgs', 'cc_presence_weas.png'), device = 'png', bg = 'white', plot = cc_pres_plt, width = 7, height = 7, units = 'in')
 ```
 
 ```{r leaflet, echo = FALSE, eval = TRUE, results = 'hide', message = FALSE, warning = FALSE, comment = NA}
