@@ -26,7 +26,7 @@ development:
     -   Research tools differ depending on scale
 -   What should we focus on?
 
-### [:earth\_americas:](https://jmhatch-noaa.github.io/READ-PSB-TE-Wind/) Spatial considerations
+### [:earth_americas:](https://jmhatch-noaa.github.io/READ-PSB-TE-Wind/) Spatial considerations
 
 Looking at the active renewable energy leases from BOEM, we see that
 offshore wind development will make up roughly 1.9% of the Greater
