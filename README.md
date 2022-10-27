@@ -22,9 +22,9 @@ Exploring the relationship between individual and population risk (is
 this the right term?), as it relates to sea turtles and offshore wind
 development:
 
--   Scale matters
-    -   Research tools differ depending on scale
--   What should we focus on?
+- Scale matters
+  - Research tools differ depending on scale
+- What should we focus on?
 
 ### [:earth_americas:](https://jmhatch-noaa.github.io/READ-PSB-TE-Wind/) Spatial considerations
 
