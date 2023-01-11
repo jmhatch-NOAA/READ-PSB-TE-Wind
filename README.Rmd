@@ -86,14 +86,17 @@ boem_wind = boem_wea_outlines %>%
                            STATE == 'Virginia' ~ 'VA',
                            TRUE ~ STATE))
 
+## remove CA
+boem_wind %<>% dplyr::filter(STATE != 'CA')
+
 ## area calcs
 wea_of_gar = sum(st_area(boem_wind)) / st_area(gar %>% st_transform(4326))
 wea_of_lme = sum(st_area(boem_wind)) / st_area(lme)
 
 ## extract by WEA and month
-prob_wea = purrr::map(.x = file_img, .f = function(.x) purrr::map_dbl(.x = raster::extract(.x, boem_wind %>% as_Spatial()), .f = function(.x) sum(exp(.x))))
+prob_wea = purrr::map(.x = file_img, .f = function(.x) purrr::map_dbl(.x = raster::extract(.x, boem_wind %>% as_Spatial()), .f = function(.y) sum(exp(ifelse(is.null(.y), NA, .y)))))
 prob_df = purrr::map_dfr(.x = seq_along(prob_wea), .f = function(.x) tibble(wea = boem_wind$STATE, month = .x, month_abb = month.name[.x], prob = prob_wea[[.x]]))
-prob_df %<>% mutate(wea = factor(wea, levels = c('MA', 'RI/MA', 'RI', 'NY', 'NY/NJ', 'NJ', 'DE', 'MD', 'VA', 'NC'))) %>% group_by(wea, month, month_abb) %>% summarize(prob = sum(prob))
+prob_df %<>% mutate(wea = factor(wea, levels = c('MA', 'RI/MA', 'RI', 'NY', 'NY/NJ', 'NJ', 'DE', 'MD', 'VA', 'NC'))) %>% group_by(wea, month, month_abb) %>% summarize(prob = sum(prob, na.rm = TRUE))
 cc_pres_plt = ggplot(data = prob_df, aes(x = month, y = prob)) + 
   facet_wrap(~wea, ncol = 3) + 
   geom_point(size = 3) + 

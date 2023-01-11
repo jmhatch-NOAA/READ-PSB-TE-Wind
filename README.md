@@ -47,7 +47,7 @@ turtles to active wind energy lease areas. I then exponentiated (back
 transformed from the log scale) the extracted values and summed them by
 active wind energy lease area (aggregated by state) and month. The max
 value over all active wind energy lease areas and months was roughly
-28.1%.
+11.8%.
 
 ------------------------------------------------------------------------
 
