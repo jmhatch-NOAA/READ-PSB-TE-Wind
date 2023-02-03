@@ -1,7 +1,6 @@
 on:
+  workflow_dispatch:
   push:
-  schedule:
-    - cron: "0 3 * * *"
 name: update-readme
 
 jobs:
