@@ -1,6 +1,9 @@
 name: update-readme
 
-on: [repository_dispatch, push]
+on: 
+  repository_dispatch:
+    types: [ trigger-workflow ]
+  push:
 
 jobs:
   update-readme:
