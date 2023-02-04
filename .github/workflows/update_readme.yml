@@ -4,6 +4,9 @@ on:
   workflow_dispatch:
   push:
 
+env:
+  GH_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+      
 jobs:
   update-readme:
     runs-on: ubuntu-latest
