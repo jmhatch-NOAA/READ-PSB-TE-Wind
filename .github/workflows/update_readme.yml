@@ -3,13 +3,12 @@ name: update-readme
 on: 
   workflow_dispatch:
   push:
-
-env:
-  GH_TOKEN: ${{ secrets.ACCESS_TOKEN }}
       
 jobs:
   update-readme:
     runs-on: ubuntu-latest
+    env:
+      GITHUB_PAT: ${{ secrets.ACCESS_TOKEN }}
     steps:
       - uses: actions/checkout@v3
       - uses: r-lib/actions/setup-r@v2
