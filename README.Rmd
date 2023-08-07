@@ -134,7 +134,7 @@ m = leaflet() %>%
   addPolygons(data = gar %>% st_transform(4326), fillColor = 'transparent', color = '#D11202', popup = 'Greater Atlantic Region') %>%
   addPolygons(data = lme, fillColor = '#D11202', color = 'transparent', popup = 'Continental Shelf', group = 'C. Shelf') %>%
   addPolygons(data = boem_wind, fillColor = '#FF2A00', color = '#FF2A00', popup = ~LEASE_NUMBER_COMPANY, group = 'WEAs') %>%
-  addPolygons(data = plan_wind, fillColor = '#00d5ff', color = '#00d5ff', popup = ~ADDITIONAL, group = 'Planning WEAs') %>%
+  addPolygons(data = plan_wind, fillColor = '#00d5ff', color = '#00d5ff', popup = ~ADDITIONAL_INFORMATION, group = 'Planning WEAs') %>%
   addRasterImage(prop_gar, colors = color_pal, opacity = 0.3, group = '% Surf. Time (Sep)') %>%
   addLegend(pal = color_pal, values = values(prop_gar), title = '% Surface Time', group = '% Surf. Time (Sep)') %>% 
    addLayersControl(
