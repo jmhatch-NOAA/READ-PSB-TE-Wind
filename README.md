@@ -29,11 +29,11 @@ development:
 ### [:earth_americas:](https://jmhatch-noaa.github.io/READ-PSB-TE-Wind/) Spatial considerations
 
 Looking at the active renewable energy leases from BOEM, we see that
-offshore wind development will make up roughly 1.9% of the Greater
+offshore wind development will make up roughly 2.0% of the Greater
 Atlantic Region (GAR). Zooming in a bit, to only consider the
 continental shelf within the GAR (preferred habitat for most sea
 turtles), we see that offshore wind development will make up roughly
-8.3%.
+8.7%.
 
 ### Case study of loggerhead turtle presence in active wind energy lease areas
 
