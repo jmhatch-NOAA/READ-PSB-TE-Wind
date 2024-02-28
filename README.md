@@ -3,7 +3,12 @@
 
 # Understanding the Intersection of Offshore Wind Development and Sea Turtles in the U.S. Atlantic
 
-![gitleaks](https://github.com/jmhatch-NOAA/READ-PSB-TE-Wind/actions/workflows/secretScan.yml/badge.svg)
+<figure>
+<img
+src="https://github.com/jmhatch-NOAA/READ-PSB-TE-Wind/actions/workflows/secretScan.yml/badge.svg"
+alt="gitleaks" />
+<figcaption aria-hidden="true">gitleaks</figcaption>
+</figure>
 
 This README is a living document and will change as the repository
 changes.
@@ -37,8 +42,12 @@ turtles), we see that offshore wind development will make up roughly
 
 ### Case study of loggerhead turtle presence in active wind energy lease areas
 
-![Loggerhead turtle presence in wind energy
-areas](./imgs/cc_presence_weas.png)
+<figure>
+<img src="./imgs/cc_presence_weas.png"
+alt="Loggerhead turtle presence in wind energy areas" />
+<figcaption aria-hidden="true">Loggerhead turtle presence in wind energy
+areas</figcaption>
+</figure>
 
 Using the predictions from [Winton et
 al. (2018)](https://www.int-res.com/abstracts/meps/v586/p217-232/), I
