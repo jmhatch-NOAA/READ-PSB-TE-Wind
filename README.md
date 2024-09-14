@@ -38,7 +38,7 @@ offshore wind development will make up roughly 2.0% of the Greater
 Atlantic Region (GAR). Zooming in a bit, to only consider the
 continental shelf within the GAR (preferred habitat for most sea
 turtles), we see that offshore wind development will make up roughly
-8.7%.
+8.8%.
 
 ### Case study of loggerhead turtle presence in active wind energy lease areas
 
