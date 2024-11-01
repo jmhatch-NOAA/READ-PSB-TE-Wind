@@ -3,12 +3,7 @@
 
 # Understanding the Intersection of Offshore Wind Development and Sea Turtles in the U.S. Atlantic
 
-<figure>
-<img
-src="https://github.com/jmhatch-NOAA/READ-PSB-TE-Wind/actions/workflows/secretScan.yml/badge.svg"
-alt="gitleaks" />
-<figcaption aria-hidden="true">gitleaks</figcaption>
-</figure>
+![](https://github.com/jmhatch-NOAA/READ-PSB-TE-Wind/actions/workflows/secretScan.yml/badge.svg)
 
 This README is a living document and will change as the repository
 changes.
@@ -21,7 +16,7 @@ focused on **Offshore Wind Development** and **Sea Turtles**.
 
 ## Mind Mapping Sea Turtle Ecology
 
-<img align="right" src="imgs/mind_map_te_wind.png" width="450">
+<img src="imgs/mind_map_te_wind.png" align="right" width="450"/>
 
 Exploring the relationship between individual and population risk (is
 this the right term?), as it relates to sea turtles and offshore wind
