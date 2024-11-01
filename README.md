@@ -37,14 +37,9 @@ turtles), we see that offshore wind development will make up roughly
 
 ### Case study of loggerhead turtle presence in active wind energy lease areas
 
-<figure>
-<img src="./imgs/cc_presence_weas.png"
-alt="Loggerhead turtle presence in wind energy areas" />
-<figcaption aria-hidden="true">Loggerhead turtle presence in wind energy
-areas</figcaption>
-</figure>
-
-Using the predictions from [Winton et
+![Loggerhead turtle presence in wind energy
+areas](./imgs/cc_presence_weas.png) <br> Using the predictions from
+[Winton et
 al. (2018)](https://www.int-res.com/abstracts/meps/v586/p217-232/), I
 extracted the predicted monthly log density values of tagged loggerhead
 turtles to active wind energy lease areas. I then exponentiated (back
