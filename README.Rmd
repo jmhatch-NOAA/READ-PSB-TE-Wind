@@ -20,7 +20,7 @@ This README is a living document and will change as the repository changes.
 
 ## A Space and a Place
 
-This GitHub repository is a place and space for discussion and collaboration among members of the NEFSC / PETT / TE program focused on **Offshore Wind Development** and **Sea Turtles**.
+This GitHub repository is a place and space for discussion and collaboration among members of the NEFSC / PSD / CEB / TE program focused on **Offshore Wind Development** and **Sea Turtles**.
 
 ## Mind Mapping Sea Turtle Ecology
 
