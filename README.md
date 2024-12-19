@@ -3,8 +3,6 @@
 
 # Understanding the Intersection of Offshore Wind Development and Sea Turtles in the U.S. Atlantic
 
-![](https://github.com/jmhatch-NOAA/READ-PSB-TE-Wind/actions/workflows/secretScan.yml/badge.svg)
-
 This README is a living document and will change as the repository
 changes.
 
