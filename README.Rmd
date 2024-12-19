@@ -13,9 +13,6 @@ library(knitr)
 ```
 
 # Understanding the Intersection of Offshore Wind Development and Sea Turtles in the U.S. Atlantic
-
-# ![](https://github.com/jmhatch-NOAA/READ-PSB-TE-Wind/actions/workflows/secretScan.yml/badge.svg)
-
 This README is a living document and will change as the repository changes.
 
 ## A Space and a Place
@@ -155,8 +152,7 @@ Looking at the active renewable energy leases from BOEM, we see that offshore wi
 
 ![Loggerhead turtle presence in wind energy areas](./imgs/cc_presence_weas.png)
 
-<br>
-Using the predictions from [Winton et al. (2018)](https://www.int-res.com/abstracts/meps/v586/p217-232/), I extracted the predicted monthly log density values of tagged loggerhead turtles to active wind energy lease areas. I then exponentiated (back transformed from the log scale) the extracted values and summed them by active wind energy lease area (aggregated by state) and month. The max value over all active wind energy lease areas and months was roughly `r sprintf("%0.1f%%", max(prob_df$prob) * 100)`.
+<br> Using the predictions from [Winton et al. (2018)](https://www.int-res.com/abstracts/meps/v586/p217-232/), I extracted the predicted monthly log density values of tagged loggerhead turtles to active wind energy lease areas. I then exponentiated (back transformed from the log scale) the extracted values and summed them by active wind energy lease area (aggregated by state) and month. The max value over all active wind energy lease areas and months was roughly `r sprintf("%0.1f%%", max(prob_df$prob) * 100)`.
 
 ------------------------------------------------------------------------
 
