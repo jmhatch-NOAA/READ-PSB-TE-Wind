@@ -13,6 +13,7 @@ library(knitr)
 ```
 
 # Understanding the Intersection of Offshore Wind Development and Sea Turtles in the U.S. Atlantic
+
 This README is a living document and will change as the repository changes.
 
 ## A Space and a Place
