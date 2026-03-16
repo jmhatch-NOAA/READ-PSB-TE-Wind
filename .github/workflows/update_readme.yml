@@ -21,11 +21,11 @@ jobs:
         shell: bash
 
       - name: Install R packages
-        run: Rscript -e 'install.packages(c("cowplot", "devtools", "dplyr", "ggplot2", "here", "htmlwidgets", "leaflet", "lwgeom", "magrittr", "MetBrewer", "ncdf4", "raster", "rmarkdown"))'
+        run: Rscript -e 'install.packages(c("cowplot", "devtools", "dplyr", "ggplot2", "here", "htmlwidgets", "leaflet", "lwgeom", "magrittr", "MetBrewer", "ncdf4", "pak", "raster", "rmarkdown"))'
 
       - name: Update README
         run: |
-          devtools::install_github('jmhatch-NOAA/boemWind')
+          pak::pak('jmhatch-NOAA/boemWind')
           rmarkdown::render('README.Rmd')
         shell: Rscript {0}
 
